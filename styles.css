@@ -1,20 +1,71 @@
-<!doctype html>
-<html lang="en">
-<head>
-   <!--
-      New Perspectives on HTML5 and CSS3, 8th Edition
-      Project CSS3 Styles
+/* ===============================
+   Author: Cora Germany
+   File: styles.css
+   Description: Final Project Homepage Styling
+   =============================== */
 
-      Author: Cora Germany
-      Date: 10/18/2025
-      Filename:style.css
-   -->
+/* Global Background and Font */
+body {
+  background: linear-gradient(to right, lightcyan, lightblue);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-   <!-- Correctly linked CSS files -->
-   <link href="index.html" rel="stylesheet" />
-   <link href="styles.css" rel="stylesheet" />
+/* Header Section */
+header {
+  text-align: center;
+  background-color: teal;
+  color: white;
+  padding: 20px;
+}
 
-<body>
-background-color: ivory;
-font: Arial;
+header h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
 
+/* Navigation Menu */
+nav ul {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Horizontal menu */
+  justify-content: center;
+  background-color: darkslategray;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: seagreen;
+  color: lightyellow;
+}
+
+/* Main Content Sections */
+main section {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px gray;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  background-color: darkslategray;
+  color: white;
+  padding: 10px;
+}
