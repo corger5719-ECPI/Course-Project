@@ -1,1 +1,20 @@
-<link href="index.html" rel="stylesheet" />
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 8th Edition
+      Project CSS3 Styles
+
+      Author: Cora Germany
+      Date: 10/18/2025
+      Filename:style.css
+   -->
+
+   <!-- Correctly linked CSS files -->
+   <link href="index.html" rel="stylesheet" />
+   <link href="styles.css" rel="stylesheet" />
+
+<body>
+background-color: ivory;
+font: Arial;
+
