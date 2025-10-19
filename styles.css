@@ -3,6 +3,9 @@
    File: styles.css
    Description: Final Project Homepage Styling
    =============================== */
+ <!-- Link the stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.html">
 
 /* Global Background and Font */
 body {
