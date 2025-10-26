@@ -7,68 +7,87 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="index.html">
 
-/* Global Background and Font */
+/* General Page Styling */
 body {
-  background: linear-gradient(to right, lightcyan, lightblue);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background-color: #fafafa;
 }
 
-/* Header Section */
 header {
-  text-align: center;
-  background-color: teal;
+  background-color: #1a5276;
   color: white;
   padding: 20px;
+  text-align: center;
 }
 
-header h1 {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-/* Navigation Menu */
+/* Navigation styling with hover transition */
 nav ul {
-  list-style-type: none; /* Removes bullet points */
-  margin: 0;
+  list-style-type: none;
   padding: 0;
-  display: flex; /* Horizontal menu */
-  justify-content: center;
-  background-color: darkslategray;
 }
 
-nav ul li {
+nav li {
+  display: inline-block;
   margin: 0 15px;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  transition: 0.3s;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-  background-color: seagreen;
-  color: lightyellow;
+nav a:hover {
+  background-color: #117864; /* Hover transition effect */
 }
 
-/* Main Content Sections */
-main section {
-  padding: 20px;
-  margin: 20px;
+/* Main section hover zoom */
+section {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 900px;
   background-color: white;
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 8px gray;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Footer Section */
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  background-color: darkslategray;
-  color: white;
+section:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+th, td {
+  border: 1px solid #ddd;
   padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background-color: #e6f2ff; /* Header background */
+  color: #003366;
+}
+
+tfoot td {
+  text-align: center;
+  background-color: #f4f4f4;
+  font-weight: bold;
 }
