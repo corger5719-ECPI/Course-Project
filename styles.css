@@ -20,6 +20,214 @@ header {
   padding: 20px;
   text-align: center;
 }
+/* ---------- GENERAL FLEXBOX LAYOUT ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Flexbox for navigation */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Flexbox for the contact form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---------- FORM STYLING ---------- */
+#contact label {
+  font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect for fields */
+#contact input:focus,
+#contact textarea:focus {
+  border-color: teal;
+  outline: none;
+}
+
+/* Submit Button */
+#contact input[type="submit"] {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Button */
+#contact input[type="submit"]:hover {
+  background-color: darkcyan;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Smartphones (max-width: 600px) */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact form {
+    width: 90%;
+  }
+}
+
+/* Tablets (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  #contact form {
+    width: 80%;
+  }
+}
+
+/* Desktops (1025px and above) */
+@media (min-width: 1025px) {
+  main {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #contact form {
+    width: 40%;
+  }
+}
+/* ---------- GENERAL FLEXBOX LAYOUT ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Flexbox for navigation */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Flexbox for the contact form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---------- FORM STYLING ---------- */
+#contact label {
+  font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect for fields */
+#contact input:focus,
+#contact textarea:focus {
+  border-color: teal;
+  outline: none;
+}
+
+/* Submit Button */
+#contact input[type="submit"] {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Button */
+#contact input[type="submit"]:hover {
+  background-color: darkcyan;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Smartphones (max-width: 600px) */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact form {
+    width: 90%;
+  }
+}
+
+/* Tablets (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  #contact form {
+    width: 80%;
+  }
+}
+
+/* Desktops (1025px and above) */
+@media (min-width: 1025px) {
+  main {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #contact form {
+    width: 40%;
+  }
+}
 
 /* Navigation styling with hover transition */
 nav ul {
